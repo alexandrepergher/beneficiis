@@ -124,6 +124,7 @@ header {
     flex-direction: column;
     color: white;
     padding: 30px;
+    
 
     h1 {
         color: #fdff8e;
@@ -132,8 +133,8 @@ header {
     h2 {
         color: #ffffff;
         font-weight: 500;
-                text-align: center;
-                line-height: 1.1em;
+        text-align: center;
+        line-height: 1.1em;
 
     }
 
@@ -144,6 +145,8 @@ section {
     color: #ffffff;
     padding: 0 40px 30px;
     font-size: 1em;
+    margin-top: -1px;
+
 
     a {
         border: 2px solid #fdff8e;
@@ -157,6 +160,7 @@ section {
         justify-content: center;
         align-items: center;
         padding: 15px 0;
+        margin-top: 50px;
 
         &:hover {
         color: #fdff8e;
@@ -164,8 +168,8 @@ section {
         }
 
         svg {
-                width: 56px;
-                fill: #fdff8e;
+            width: 56px;
+            fill: #fdff8e;
         }
     }
 }
@@ -176,6 +180,7 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 30px 0;
+    font-size: .8em;
 }
 
 
@@ -185,24 +190,34 @@ footer {
 
 /* Dispositivos Médios (Tablets, a partir de 768px) */
 @media (min-width: 768px) {
+
+    header {
+        height: 60vh;
+        background-position: center;
+        margin: 0;
+
+    }
     
     /* Cabeçalho passa a ficar lado a lado */
-section {
-    font-size: 1.6em;
+    section {
+        font-size: 1.6em;
         padding: 0 10% 30px;
+        p {
+            margin-bottom: 30px;
+        }
 
         a {
             padding: 35px 0;
+            margin-top: 50px;
         }
-
-
-        footer {
-            p {
-                font-size: 1.6em;
-            }
-        }
-
     }
+
+    footer {
+        p {
+            font-size: 1.6em;
+        }
+    }
+
 
 
 }
@@ -212,6 +227,10 @@ section {
 
 section {
     font-size: 1.1em;
+    flex-direction: row;
+    p {
+        width: calc(100%-360px);
+    }
 
     a {
         width: 360px;
