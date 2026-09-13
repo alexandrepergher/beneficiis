@@ -183,11 +183,12 @@ a {
     font-weight: 600;
     line-height: 1.2em;
     gap: 15px;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+    justify-content: center !important;
+    align-content: center !important;
+    align-items: center !important;
+    justify-items: center !important;
     padding: 15px 0;
-    margin-top: 50px;
+    margin-bottom: 20px !important;
 }
 
 a p {
@@ -201,6 +202,7 @@ a p {
         svg {
             width: 56px;
             fill: #fdff8e;
+            height: auto;
         }
 
 /* --- Rodapé --- */
